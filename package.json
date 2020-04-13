@@ -8,6 +8,7 @@
     "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts"
   },
   "dependencies": {
+    "eslint-import-resolver-typescript": "^2.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
