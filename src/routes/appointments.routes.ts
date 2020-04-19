@@ -23,9 +23,6 @@ appointmentsRouter.post('/', async (request, response) => {
         const { provider_id, date } = request.body;
 
         const parsedDate = parseISO(date);
-        const appointmentsRepository = getCustomRepository(
-            AppointmentsRepository,
-        );
 
         const createAppointment = new CreateAppointmentsService();
 
